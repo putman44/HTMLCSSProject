@@ -27,9 +27,6 @@ header {
   background-color: rgb(36, 35, 35);
   top: 0;
   padding: 1rem;
-}
-
-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -84,13 +81,13 @@ td {
 }
 
 th {
-  background-color: #2b2c2b;
+  background-color: #858785;
   color: white;
   font-weight: bold;
 }
 
 tr:hover {
-  background-color: #2b2c2b;
+  background-color: #858785;
 }
 
 /* Section header styling */
@@ -99,7 +96,7 @@ tr:hover {
   font-size: 1.2rem;
   font-weight: bold;
   color: white;
-  background-color: black;
+  background-color: rgb(30, 30, 30);
   padding: 10px;
   border-top: 2px solid #2b2c2b;
   border-bottom: 2px solid #2b2c2b;

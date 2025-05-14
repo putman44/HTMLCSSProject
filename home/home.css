@@ -235,6 +235,11 @@ h2 {
   border-radius: 5%;
 }
 
+.event-container:hover {
+  transform: scale(0.95);
+  transition: transform 0.5s ease;
+}
+
 .event-info {
   display: flex;
   flex-direction: column;
