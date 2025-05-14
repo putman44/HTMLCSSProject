@@ -235,7 +235,7 @@ h2 {
   border-radius: 5%;
 }
 
-.event-details {
+.event-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -243,7 +243,7 @@ h2 {
   position: absolute;
 }
 
-.event-details p {
+.event-info p {
   font-size: clamp(0.5rem, 2vw, 2rem);
   text-align: center;
   color: white;
