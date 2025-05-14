@@ -2,8 +2,18 @@
 * {
   margin: 0;
   padding: 0;
+
   font-family: Arial, sans-serif;
   box-sizing: border-box; /* Ensure consistent sizing */
+}
+body {
+  background-color: rgb(36, 35, 35);
+}
+
+h1,
+h3,
+p {
+  color: white;
 }
 
 /* Consolidate repetitive flexbox styles */

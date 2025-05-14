@@ -5,6 +5,15 @@
   font-family: Arial, sans-serif;
   box-sizing: border-box; /* Ensure consistent sizing */
 }
+body {
+  background-color: rgb(36, 35, 35);
+}
+
+h1,
+h3,
+p {
+  color: white;
+}
 
 /* Consolidate repetitive flexbox styles */
 .flex-center {
@@ -79,7 +88,6 @@ h2 {
   row-gap: 1rem;
   margin: 0 5%;
   padding: 1rem;
-  background-color: rgba(41, 37, 37, 0.5);
 }
 @media screen and (min-width: 900px) {
   #events {
@@ -110,6 +118,10 @@ h2 {
 
 .event-details {
   flex: 1; /* Allow details to take remaining space */
+}
+
+.event-details p {
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
 }
 
 .upcoming-events {
