@@ -33,9 +33,6 @@ header {
   background-color: rgb(36, 35, 35);
   top: 0;
   padding: 1rem;
-}
-
-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -80,6 +77,10 @@ a {
   }
 }
 
+#contact {
+  height: 100vh;
+}
+
 form {
   max-width: 600px;
   margin: 20px auto;
@@ -120,11 +121,8 @@ button:hover {
 }
 
 footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #4caf50;
-  color: white;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+  min-height: 50px;
 }

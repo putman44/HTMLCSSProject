@@ -28,9 +28,6 @@ header {
   background-color: rgb(36, 35, 35);
   top: 0;
   padding: 1rem;
-}
-
-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -88,4 +85,11 @@ iframe {
   justify-content: center;
   align-items: center;
   margin: 40px 0;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+  min-height: 50px;
 }
