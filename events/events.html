@@ -3,16 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="home.css" />
-    <title>Event Center Website</title>
+    <link rel="stylesheet" href="events.css" />
+    <title>Events</title>
   </head>
   <body>
     <header>
       <h1>Thornton Event Center</h1>
       <nav>
         <ul id="nav-links">
-          <li><a href="home.html">Home</a></li>
-          <li><a href="../events/events.html">Events</a></li>
+          <li><a href="../home/home.html">Home</a></li>
+          <li><a href="event.html">Events</a></li>
           <li><a href="#">Services</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
@@ -20,55 +20,10 @@
     </header>
 
     <main>
-      <section id="hero" class="flex-center">
-        <h2>Your Event, Our Space</h2>
-        <p>Book your next event with us!</p>
-      </section>
-
-      <section id="welcome" class="flex-center">
-        <p>We provide the best event spaces in the city.</p>
-        <p>Our mission is to make your event unforgettable.</p>
-      </section>
-
-      <section id="about">
-        <div class="about-grid-item about">
-          <h2>About Us</h2>
-          <p>We are dedicated to providing top-notch event spaces.</p>
-          <p>Our team is here to assist you every step of the way.</p>
-        </div>
-        <div class="about-grid-item">
-          <img
-            src="../images/about-image/DSC00413.JPG"
-            alt="photo of John James"
-            loading="lazy"
-          />
-          <span>CEO</span>
-          <span>John James</span>
-        </div>
-        <div class="about-grid-item">
-          <img
-            src="../images/about-image/DSC09139 (1).JPG"
-            alt="photo of Billy Boe"
-            loading="lazy"
-          />
-          <span>COO</span>
-          <span>Billy Boe</span>
-        </div>
-        <div class="about-grid-item">
-          <img
-            src="../images/about-image/IMG_6549.jpg"
-            alt="photo of Doug Doe"
-            loading="lazy"
-          />
-          <span>Communications</span>
-          <span>Doug Doe</span>
-        </div>
-      </section>
-
       <h2 class="upcoming-events">Upcoming Events</h2>
       <section id="events">
-        <a href="../events/events.html#event-1">
-          <div class="event-container">
+        <a href="../events/events.html">
+          <div id="event-1" class="event-container">
             <img
               class="event-image"
               src="../images/event-images/charitygala.jpg"
@@ -78,25 +33,31 @@
             <div class="event-details">
               <h3 class="event-title">Charity Gala</h3>
               <p>Date: March 15, 2023</p>
+              <p>Location: Main Hall</p>
+              <p>
+                Details: Join us for a night of giving back to the community.
+              </p>
             </div>
           </div>
         </a>
-        <a href="../events/events.html#event-2">
-          <div class="event-container">
-            <img
-              class="event-image"
-              src="../images/event-images/corporateconference.jpg"
-              alt="Corporate Conference"
-              loading="lazy"
-            />
-            <div class="event-details">
-              <h3 class="event-title">Corporate Conference</h3>
-              <p>Date: April 20, 2023</p>
-            </div>
+        <div id="event-2" class="event-container">
+          <img
+            class="event-image"
+            src="../images/event-images/corporateconference.jpg"
+            alt="Corporate Conference"
+            loading="lazy"
+          />
+          <div class="event-details">
+            <h3 class="event-title">Corporate Conference</h3>
+            <p>Date: April 20, 2023</p>
+            <p>Location: Conference Room A</p>
+            <p>
+              Details: A gathering of industry leaders to discuss the future.
+            </p>
           </div>
-        </a>
+        </div>
         <a href="../events/events.html#event-3">
-          <div class="event-container">
+          <div id="event-3" class="event-container">
             <img
               class="event-image"
               src="../images/event-images/weddingreception.jpg"
@@ -106,11 +67,13 @@
             <div class="event-details">
               <h3 class="event-title">Wedding Reception</h3>
               <p>Date: May 10, 2023</p>
+              <p>Location: Garden Area</p>
+              <p>Details: Celebrate love in our beautiful garden setting.</p>
             </div>
           </div>
         </a>
         <a href="../events/events.html#event-4">
-          <div class="event-container">
+          <div id="event-4" class="event-container">
             <img
               class="event-image"
               src="../images/event-images/musicfestival.jpg"
@@ -120,11 +83,13 @@
             <div class="event-details">
               <h3 class="event-title">Music Festival</h3>
               <p>Date: June 25, 2023</p>
+              <p>Location: Outdoor Stage</p>
+              <p>Details: Enjoy live music from local bands and artists.</p>
             </div>
           </div>
         </a>
         <a href="../events/events.html#event-5">
-          <div class="event-container">
+          <div id="event-5" class="event-container">
             <img
               class="event-image"
               src="../images/event-images/artexhibition.jpg"
@@ -134,11 +99,13 @@
             <div class="event-details">
               <h3 class="event-title">Art Exhibition</h3>
               <p>Date: July 15, 2023</p>
+              <p>Location: Gallery Room</p>
+              <p>Details: Explore the works of local artists in our gallery.</p>
             </div>
           </div>
         </a>
         <a href="../events/events.html#event-6">
-          <div class="event-container">
+          <div id="event-6" class="event-container">
             <img
               class="event-image"
               src="../images/event-images/foodfestival.jpg"
@@ -148,15 +115,30 @@
             <div class="event-details">
               <h3 class="event-title">Food Festival</h3>
               <p>Date: August 30, 2023</p>
+              <p>Location: Main Hall</p>
+              <p>Details: Taste delicious dishes from local food vendors.</p>
             </div>
           </div>
         </a>
       </section>
+
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
     </main>
 
-    <footer class="flex-center">
-      <p>&copy; 2023 Thornton Event Center. All rights reserved.</p>
-      <p>Site Created by Taylor Putman</p>
-    </footer>
+    <footer>&copy; 2024 Thornton Event Center. All rights reserved.</footer>
   </body>
 </html>

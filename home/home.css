@@ -39,7 +39,7 @@ ul {
   gap: 1rem;
 }
 
-li a {
+a {
   text-decoration: none;
   color: white;
 }
