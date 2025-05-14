@@ -7,7 +7,7 @@
   box-sizing: border-box; /* Ensure consistent sizing */
 }
 body {
-  background-color: rgb(36, 35, 35);
+  background-color: rgba(0, 0, 0, 1);
 }
 
 h1,
@@ -100,7 +100,7 @@ h2 {
   font-size: 1.5rem;
   line-height: 2rem;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
+
   padding: 2rem 0.5rem;
   margin: auto;
 }
@@ -200,7 +200,6 @@ h2 {
   row-gap: 1rem;
   margin: 0 5%;
   padding: 1rem;
-  background-color: rgba(41, 37, 37, 0.5);
 }
 @media screen and (min-width: 1100px) {
   #events {

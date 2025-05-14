@@ -6,7 +6,7 @@
   box-sizing: border-box; /* Ensure consistent sizing */
 }
 body {
-  background-color: rgb(36, 35, 35);
+  background-color: rgba(0, 0, 0, 1);
 }
 
 h1,
