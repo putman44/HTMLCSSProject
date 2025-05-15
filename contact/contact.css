@@ -1,19 +1,27 @@
+/* Consolidated repetitive styles */
+:root {
+  --primary-bg: rgba(0, 0, 0, 1);
+  --primary-color: white;
+  --header-bg: rgb(36, 35, 35);
+  --gap: 1rem;
+}
+
 * {
   margin: 0;
   padding: 0;
-
   font-family: Arial, sans-serif;
   box-sizing: border-box; /* Ensure consistent sizing */
 }
+
 body {
-  background-color: rgba(0, 0, 0, 1);
+  background-color: var(--primary-bg);
 }
 
 h1,
 h3,
 p,
 span {
-  color: white;
+  color: var(--primary-color);
 }
 
 h2 {
@@ -30,9 +38,9 @@ h2 {
 
 header {
   position: sticky;
-  background-color: rgb(36, 35, 35);
+  background-color: var(--header-bg);
   top: 0;
-  padding: 1rem;
+  padding: var(--gap);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,12 +54,12 @@ nav {
 ul {
   display: flex;
   list-style: none;
-  gap: 1rem;
+  gap: var(--gap);
 }
 
 a {
   text-decoration: none;
-  color: white;
+  color: var(--primary-color);
 }
 
 @media screen and (max-width: 768px) {
@@ -60,11 +68,11 @@ a {
   }
 
   nav {
-    margin-top: 1rem;
+    margin-top: var(--gap);
   }
 
   ul {
-    gap: 0.5rem;
+    gap: calc(var(--gap) / 2);
   }
 
   .event-container {
@@ -85,7 +93,7 @@ form {
   max-width: 600px;
   margin: 20px auto;
   padding: 20px;
-  background-color: white;
+  background-color: var(--primary-color);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
 }
@@ -108,7 +116,7 @@ textarea {
 
 button {
   background-color: royalblue;
-  color: white;
+  color: var(--primary-color);
   border: none;
   padding: 10px 20px;
   font-size: 1rem;

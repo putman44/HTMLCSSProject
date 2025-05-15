@@ -1,3 +1,11 @@
+/* Consolidated repetitive styles */
+:root {
+  --primary-bg: rgba(0, 0, 0, 1);
+  --primary-color: white;
+  --header-bg: rgb(36, 35, 35);
+  --gap: 1rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,13 +14,14 @@
 }
 
 body {
-  background-color: rgba(0, 0, 0, 1);
+  background-color: var(--primary-bg);
   grid-template-rows: auto 1fr auto;
 }
+
 h1,
 h3,
 p {
-  color: white;
+  color: var(--primary-color);
 }
 
 /* Consolidate repetitive flexbox styles */
@@ -25,9 +34,9 @@ p {
 
 header {
   position: sticky;
-  background-color: rgb(36, 35, 35);
+  background-color: var(--header-bg);
   top: 0;
-  padding: 1rem;
+  padding: var(--gap);
   min-height: 50px;
   display: flex;
   justify-content: space-between;
@@ -42,12 +51,12 @@ nav {
 ul {
   display: flex;
   list-style: none;
-  gap: 1rem;
+  gap: var(--gap);
 }
 
 a {
   text-decoration: none;
-  color: white;
+  color: var(--primary-color);
 }
 
 @media screen and (max-width: 768px) {
@@ -56,11 +65,11 @@ a {
   }
 
   nav {
-    margin-top: 1rem;
+    margin-top: var(--gap);
   }
 
   ul {
-    gap: 0.5rem;
+    gap: calc(var(--gap) / 2);
   }
 }
 
@@ -70,21 +79,21 @@ table {
   margin: 0 auto;
   font-size: 1rem;
   font-family: Arial, sans-serif;
-  background-color: black;
+  background-color: var(--primary-bg);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 th,
 td {
-  color: white;
+  color: var(--primary-color);
   padding: 12px;
   text-align: left;
-  border-bottom: 1px solid#2b2c2b;
+  border-bottom: 1px solid #2b2c2b;
 }
 
 th {
-  background-color: black;
-  color: white;
+  background-color: var(--primary-bg);
+  color: var(--primary-color);
   font-weight: bold;
 }
 
@@ -97,7 +106,7 @@ tr:hover {
   text-align: center;
   font-size: 1.2rem;
   font-weight: bold;
-  color: white;
+  color: var(--primary-color);
   background-color: rgb(30, 30, 30);
   padding: 10px;
   border-top: 2px solid #2b2c2b;

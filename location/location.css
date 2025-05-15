@@ -1,3 +1,10 @@
+:root {
+  --primary-bg: rgba(0, 0, 0, 1);
+  --primary-color: white;
+  --header-bg: rgb(36, 35, 35);
+  --gap: 1rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,13 +13,14 @@
 }
 
 body {
-  background-color: rgba(0, 0, 0, 1);
+  background-color: var(--primary-bg);
 }
+
 h1,
 h2,
 h3,
 p {
-  color: white;
+  color: var(--primary-color);
 }
 
 /* Consolidate repetitive flexbox styles */
@@ -25,9 +33,9 @@ p {
 
 header {
   position: sticky;
-  background-color: rgb(36, 35, 35);
+  background-color: var(--header-bg);
   top: 0;
-  padding: 1rem;
+  padding: var(--gap);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -41,12 +49,12 @@ nav {
 ul {
   display: flex;
   list-style: none;
-  gap: 1rem;
+  gap: var(--gap);
 }
 
 a {
   text-decoration: none;
-  color: white;
+  color: var(--primary-color);
 }
 
 @media screen and (max-width: 768px) {
@@ -55,11 +63,11 @@ a {
   }
 
   nav {
-    margin-top: 1rem;
+    margin-top: var(--gap);
   }
 
   ul {
-    gap: 0.5rem;
+    gap: calc(var(--gap) / 2);
   }
 }
 
